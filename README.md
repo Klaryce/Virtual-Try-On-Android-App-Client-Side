@@ -1,5 +1,5 @@
 # Virtual-Try-On-Android-App-Client-Side
-Project finihsed in May 2020. 
+Project was finihsed in May 2020. 
 
 *The author does not have the server side code.*
 
@@ -12,7 +12,7 @@ a. When the user enters the system, the system displays available target clothes
 
 b. After the user clicks on an image, the system jumps to the photo upload page. 
 
-c. After the user clicks the button, the system accesses the album on the phone. 
+c. After the user clicks the button, the system accesses the album on the mobile phone. 
 
 d. The system enters the cropping page after the user selects an image, so that the user can drag a cropping box to crop. The cropping box is of a fixed (width/length).
 
@@ -40,7 +40,7 @@ The suitable version of Android is Android 8.0.
 
 b. Permission issue. 
 
-For operations involving accessing (especially modifying) local files of the phone, it would be better to pay special attention to whether all the required permissions are turned on. 
+For operations involving accessing (especially modifying) local files of the mobile phone, it would be better to pay special attention to whether all the required permissions are turned on. 
 For example, network permissions include network permissions (android.permission.INTERNET), obtaining network status permissions (android.permission.ACCESS_NETWORK_STATE), changing network state (android.permission.CHANGE_NETWORK_STATE), changing WIFI state (android.permission.CHANGE_WIFI_STATE), and so on. 
 Storage permissions include reading external storage permissions (android.permission.READ_EXTERNAL_STORAGE), writing external storage permissions (android.permission.WRITE_EXTERNAL_STORAGE), and so on.
 For some APP with camera shooting and image clipping requirements, you also need to provide a shared folder path (File Provider Paths). 
