@@ -58,10 +58,10 @@ In order to crop the images through the shared folder, the system will generate 
 
 d. Request head issue.
 
-In many cases, the use of a general content type (Content-Type:application/octet-stream) may bring convenience to complex applications and enhance the reusability of the code. However, it is only applicable to the case where the request head is not used for any decision on the server side.
-For instance, the server may assume the content type in the request head is a specific image type and remove 'image/' from the content type to be the suffix of the filename (such as remove 'image/' from 'image/jpg' and let 'jpg' by the suffix). It may not cause an error immediately when you add an invalid filename suffix, while the file with an invalid filename in the server will return an internal error 500 when you try to access it next time.
+The use of a general content type (Content-Type:application/octet-stream) may bring convenience to complex applications and enhance the reusability of the code. However, it is only applicable to the case where the content type is not used for making any decisions on the server side.
+For instance, the server may assume the content type in the request head is a specific image type and remove 'image/' from the content type to be the suffix of the filename (such as remove 'image/' from 'image/jpg' and let 'jpg' be the suffix). It may not cause an error immediately when you add an invalid filename suffix, while the file with an invalid filename in the server will return an internal error 500 when you try to access it next time.
 
 e. Image upload issue.
 
-Before the image is uploaded to the server, a cache file should be generated, which is stored in the cache folder established by the system with the time(second) as the file name. 
+Before the image is uploaded to the server, a cache file should be generated, which is stored in the cache folder established by the system with the time (second) as the file name. 
 After successfully generating the cache file, set up the file upload listener and add the file upload thread to the processing queue.
